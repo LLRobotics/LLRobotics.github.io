@@ -56,6 +56,7 @@ a .m-item:hover {
   width: 19%;
   overflow: hidden;
   margin-right: 1%;
+  float: right;
   
 }
 
