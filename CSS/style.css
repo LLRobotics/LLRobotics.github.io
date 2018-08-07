@@ -53,6 +53,15 @@ a .m-item:hover {
   padding: 5px;
   border: none;
   transition: opacity 0.1s;
+  z-index: 2;
+  
+}
+
+#menubar input::placeholder {
+  
+  color: #CCC;
+  opacity: 1;
+  font-weight: 100;
   
 }
 
@@ -72,5 +81,6 @@ a .m-item:hover {
   font-size: 16px;
   opacity: 0.3;
   color: #999;
+  z-index: 1;
   
 }
