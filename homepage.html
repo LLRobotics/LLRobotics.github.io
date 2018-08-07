@@ -5,9 +5,51 @@
     
     <title>Las Lomas Robotics</title>
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="/CSS/BEARstyle.css" />
+    
+    <script>
+      
+      var menuarray = [ [ [ ["Jobs"],     ["thing1"], ["https://www.google.com"] ] , [ ["Jobs"],     ["thing2"], ["https://www.google.com"] ],   [ ["Jobs"],  ["thing3"], ["https://www.google.com"] ] ],
+                      [ [ ["Evidence"], ["thing1"], ["https://www.google.com"] ] , [ ["Evidence"], ["thing2"], ["https://www.google.com"] ] ],
+                      [ [ ["Users"],    ["thing1"], ["https://www.google.com"] ] , [ ["Users"],    ["thing2"], ["https://www.google.com"] ],   [ ["Users"], ["thing3"], ["https://www.google.com"] ] ] ];
+      
+    </script>
+    
   </head>
   
-  <body>
+  <body onload="fabricate(menuarray)">
+    
+    <div id="cssmenu">
+      
+      <ul id="menubar"></ul>
+      
+    </div>
+    
+    <script>
+      
+      function fabricate(paramArray) {
+        
+        var menu = document.getElementById("menubar");
+        
+        var str = "<li><a href='#homepage'><span>Home</span></a></li>";
+        
+        for (var category = 0; category < paramArray.length; category++) {
+          
+          str += "<li class='has-sub'><a href='javascript:void(0)'><span>" + paramArray[category][0][0] + "</span></a><ul>";
+          
+          for (var item = 0; item < paramArray[category].length; item++) {
+            
+            str += "<li><a href='" + paramArray[category][item][2] + "'><span>" + paramArray[category][item][1] + "</span></a></li>";
+          }
+          
+          str += "</ul></li>";
+        }
+        
+        menu.innerHTML = str;
+      }
+      
+    </script>
     
     <center style="font-family: sans-serif;">
       
