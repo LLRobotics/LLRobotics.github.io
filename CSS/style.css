@@ -37,8 +37,9 @@ a .m-item:hover {
   
 }
 
-#menubar m-item-container {
+#menubar #m-item-container {
   
+  display: inline-block;
   max-width: 80%;
   height: fit-content;
   width: fit-content;
@@ -46,8 +47,9 @@ a .m-item:hover {
   
 }
 
-#menubar m-search-container {
+#menubar #m-search-container {
   
+  display: inline-block;
   position: relative;
   height: 100%;
   width: 20%;
@@ -55,7 +57,7 @@ a .m-item:hover {
   
 }
 
-#menubar m-search-container input {
+#menubar #m-search-container input {
   
   position: absolute;
   top: 50%;
@@ -74,7 +76,7 @@ a .m-item:hover {
   
 }
 
-#menubar m-search-container input::placeholder {
+#menubar #m-search-container input::placeholder {
   
   color: #CCC;
   opacity: 1;
@@ -82,14 +84,14 @@ a .m-item:hover {
   
 }
 
-#menubar m-search-container input:hover, #menubar input:focus {
+#menubar #m-search-container input:hover, #menubar input:focus {
   
   opacity: 0.4;
   outline: none;
   
 }
 
-#menubar m-search-container .material-icons {
+#menubar #m-search-container .material-icons {
   
   position: absolute;
   right: 5px;
