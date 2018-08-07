@@ -1,6 +1,8 @@
 #menubar {
   
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #24292E;
   
@@ -9,12 +11,13 @@
 a .m-item {
   
   display: inline-block;
-  padding: 5px 10px;
-  font-size: 16px;
-  font-family: sans-serif;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-family: Raleway;
   font-weight: 100;
   text-decoration: none;
   background-color: #24292E;
+  color: white;
   transition: background-color 0.2s;
   
 }
