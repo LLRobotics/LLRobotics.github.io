@@ -1,1 +1,26 @@
+#menubar {
+  
+  position: fixed;
+  width: 100%;
+  background-color: #24292E;
+  
+}
 
+a .m-item {
+  
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  background-color: #24292E;
+  transition: background-color 0.2s;
+  
+}
+
+a .m-item:hover {
+  
+  background-color: #E42D37;
+  
+}
