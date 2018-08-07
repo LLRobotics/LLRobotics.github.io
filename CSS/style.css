@@ -13,6 +13,7 @@ body {
   width: 100%;
   background-color: #24292E;
   font-size: 0;
+  white-space: nowrap;
   
 }
 
@@ -41,8 +42,6 @@ a .m-item:hover {
   
   display: inline-block;
   max-width: 80%;
-  height: fit-content;
-  width: fit-content;
   overflow-x: auto;
   
 }
@@ -51,7 +50,7 @@ a .m-item:hover {
   
   display: inline-block;
   position: relative;
-  height: 100%;
+  height: 48px;
   width: 20%;
   overflow: hidden;
   
@@ -60,6 +59,7 @@ a .m-item:hover {
 #menubar #m-search-container input {
   
   position: absolute;
+  box-sizing: border-box;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
@@ -67,7 +67,7 @@ a .m-item:hover {
   font-family: sans-serif;
   background-color: #777;
   color: white;
-  opacity: 0.3;
+  opacity: 0.4;
   border-radius: 3px;
   padding: 5px 10px;
   border: none;
@@ -84,9 +84,9 @@ a .m-item:hover {
   
 }
 
-#menubar #m-search-container input:hover, #menubar input:focus {
+#menubar #m-search-container input:hover, #menubar #m-search-container input:focus {
   
-  opacity: 0.4;
+  opacity: 0.6;
   outline: none;
   
 }
@@ -99,7 +99,7 @@ a .m-item:hover {
   transform: translateY(-45%);
   font-size: 16px;
   opacity: 0.3;
-  color: #999;
+  color: #AAA;
   z-index: 1;
   
 }
